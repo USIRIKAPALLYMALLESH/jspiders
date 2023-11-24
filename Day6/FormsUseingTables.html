@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms using tables</title>
+</head>
+<body>
+    <!-- creating the forms using the table  -->
+    <!-- we use the name and value attributes for mainly two reasons to select one  -->
+    <!-- form validation attributes are action target autocomplete it is used to give suggestion -->
+    <!-- place holder is used to give the background text -->
+    <!-- normal and focused state that we will use autofoused mode. -->
+    <!-- required attribute is use to mandentry to fill it. mandetery-->
+    <!-- novalidate it is a attribute if reqired is present please ignore it -->
+    <!-- checked attribute is use to default it will checked automatically default -->
+    <!-- max length and min length used to give the maxlength and minlength of paticular field. -->
+    <!-- readonly attribute we cannot modify  that we use readonly we can read we cannot edit it. -->
+    <!-- disabled is used to lock the it and we can not modify it . -->
+    <form action="" target="_blank" autocomplete="off" novalidate>
+        <fieldset>
+            <legend>Forms using html</legend>
+            <table>
+                <tr>
+                    <td><label for="name">Name </label></td>
+                    <td><input type="text"  id="name" name="name" placeholder="enter name" required value="mallesh" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email </label></td>
+                    <td><input type="email"  id="email" name="email" placeholder="enter email" autofocus></td>
+                </tr>
+                <tr>
+                    <td> <label for="Password">password</label></td>
+                    <td><input type="Password"  id="Password" name="Password" placeholder="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="phno">ph no</label></td>
+                    <td><input type="tel"id="phno" name="phno" placeholder="phno"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male" checked>
+                        <label for="male"  >Male</label> 
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">female</label>
+                        <input type="radio" name="gender" id="others" value="others">
+                        <label for="others">others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="places">Places</label></td>
+                    <td>
+                        <input type="checkbox"  id="goa" value="goa">
+                        <label for="goa">Goa</label>
+                        <input type="checkbox"  id="Bankok" value="Bankok">
+                        <label for="Bankok">Bankok</label>
+                        <input type="checkbox"  id="Pandicherry" value="Pandicherry">
+                        <label for="Pandicherry">Pandicherry</label>
+                        <input type="checkbox"  id="Switerland" value="Switerland">
+                        <label for="Switerland">Switerland</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date</label></td>
+                    <td><input type="datetime-local"  id="date" name="Date"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">address</label></td>
+                    <td>
+                        <textarea id="address" cols="30" rows="10" name="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">country</label></td>
+                    <td>
+                        <select name="" id="">
+                            <option value="India">India</option>
+                            <option value="England">England</option>
+                            <option value="UK">UK</option>
+                            <option value="America">America</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="file">provide your govt id</label></td>
+                    <td><input type="file" id="file" name="file"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="enjoy your trip"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
