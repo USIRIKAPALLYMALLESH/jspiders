@@ -1,0 +1,35 @@
+
+/* id selector */
+#today{
+    background-color: chocolate;
+}
+/* class selector */
+.boldtext{
+    color: black;
+    font-size: 2rem;
+}
+/* class sector */
+.TextColor{
+    color: red;
+   
+}
+
+/* tag selector */
+p{
+    background-color: rgb(203, 140, 140);
+}
+
+/* universal selector */
+*{
+   background-color: aquamarine;
+}
+/* grouping selector */
+.first,.second,p{
+    color: yellow;
+ }
+
+ /* the priorty of the simple selectors
+ 1.id
+ 2.class
+ 3.tag
+ 4.universal */
