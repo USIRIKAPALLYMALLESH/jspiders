@@ -1,0 +1,36 @@
+/* combinator selector has mainly divided into 4 types they are
+1.descendent selector
+2.child selector
+3.adjacent sibling selector
+4.general sibling selector */
+
+/* 1.descendent selector */
+/* section article{
+    background-color: aliceblue;
+    color: red;
+} */
+
+/* 2.child selector */
+/* section>footer>article{
+    background-color: cyan;
+    color: red;
+} */
+
+/* 3.adjacent sibling selector */
+/* if the sibling is present immedetaly  */
+/* article + footer{
+    background-color: cyan;
+    color: red;
+} */
+
+/* if the sibling is not preseant immedet to it */
+/* article + footer{
+    background-color: cyan;
+    color: red;
+} */
+
+/* 4.general sibling selector */
+article ~ footer{
+    background-color: cyan;
+    color: red;
+}
