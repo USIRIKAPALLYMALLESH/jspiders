@@ -1,0 +1,92 @@
+    /* 1.link
+    2.active
+    3.hover
+    4.visited
+    5.focus etc 
+    6.first-child
+    7.last-child */
+
+
+/* it is a old version so we use a directly */
+/* a:link{
+    color: blue;
+    background-color: brown;
+} */
+
+
+ /* we can use directly by its tag it self */
+/* a{
+    color: blue;
+    background-color: brown;
+} */
+
+
+/* active  */
+/* this is for the active links we use the psudeo class active */
+/* a:active{
+    color: yellow;
+    background-color: peru;
+} */
+
+/* hover  */
+/* it is a psudeo class selector that will change the properties by hovering the mouse */
+/* a:hover{
+    color: mediumspringgreen;
+    background-color: black;
+} */
+
+
+/* visited */
+/* it will change the properties after the link is visited. */
+/* a:visited{
+    color: black;
+    background-color: blue;
+} */
+
+/* :focus is mainly used for input and forms */
+input:focus{
+    color: red;
+    background-color: paleturquoise;
+    border: none;
+} 
+
+/* first-child */
+div>p:first-child {
+    color: red;
+    background-color: paleturquoise;
+    border: none;
+}
+
+/* last-child */
+div>p:last-child {
+    color: blueviolet;
+    background-color: black;
+    border: none;
+}
+
+/* we can use odd even number 5n example in nth child */
+/* nth-child */
+div>li:nth-child(3n){
+    color: blueviolet;
+    background-color: palegreen;
+    border: none;
+}
+/* odd/even */
+div>li:nth-child(odd){
+    color: blueviolet;
+    background-color: blue;
+    border: none;
+}
+
+/* not */
+ul li:not(.hello){
+    color: blueviolet;
+    border: none;
+}
+
+
+/* :checked psudeo class selector */
+input:checked+label{
+    color: blueviolet;
+    border: none;
+}
