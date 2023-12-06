@@ -1,0 +1,56 @@
+/* In pseudo element we have more than 20 we study some of them
+    ex; 
+    1.::first-letter
+    2.::first-line
+    3.::before
+    4.::after
+    5.::marker
+    6.::selection
+    7.::placeholder */
+
+/* 1.::first-letter */
+p::first-letter {
+  color: brown;
+  font-size: 30px;
+}
+
+/* 2.::first-line */
+p::first-line {
+  color: brown;
+  background-color: chartreuse;
+}
+
+/* to select emojies we use window .button */
+
+/* 3.::before */
+p::before {
+  content: "😂";
+  color: brown;
+  background-color: red;
+}
+
+/* 4.::after */
+p::after {
+  content: "😂";
+  color: brown;
+  background-color: black;
+}
+
+/* 5.::marker */
+ul li::marker {
+  content: "✔";
+  color: brown;
+  background-color: black;
+}
+
+/* 6.::selection */
+ul li::selection {
+  color: white;
+  background-color: black;
+}
+
+/* 7.::placeholder */
+input::placeholder {
+  color: white;
+  background-color: lightgreen;
+}
