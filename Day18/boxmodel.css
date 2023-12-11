@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* In box model we mainly use the 
+    1.margin
+    2.border
+    3.padding
+    4.content */
+
+/* this all short hand proprites */
+h1 {
+  border: 5px double magenta;
+  padding: 20px;
+  margin: 40px;
+  padding: 60px 40%;
+  width: 30px;
+}
+p {
+  /* full length property. */
+  width: 400px;
+  height: 200px;
+  border: 5px double green;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 80px;
+  padding-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+h2 {
+  /* we can use that to move top we negitive values */
+  /* short hand proprties. */
+  width: 400px;
+  height: 200px;
+  border: 5px double red;
+  margin-top: -200px;
+  box-shadow: 10px 10px 10px black;
+}
+/* box-sizing;border-box */
+/* default will be box-sizing =content-box */
