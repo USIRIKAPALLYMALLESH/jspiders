@@ -1,0 +1,23 @@
+h1{
+    height: 400px;
+    width: 400px;
+}
+.hello{
+    height: 200px;
+    width: 200px;
+    border: 2px solid green;
+    filter: drop-shadow(20px 20px 2px red);
+
+ 
+    
+}
+
+.raj{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    box-shadow: 20px 4px 10px green;  
+}

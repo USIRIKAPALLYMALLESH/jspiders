@@ -1,0 +1,25 @@
+h1{
+    color: rgb(20, 255, 20);
+}
+.hello{
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    background-color: rgb(120, 120, 120);
+    
+}
+.mallesh{
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    background-color: rgba(200, 200, 200, 0.5);
+    
+}
+.colors{
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    background-color: #00ff00;
+    
+}
+
