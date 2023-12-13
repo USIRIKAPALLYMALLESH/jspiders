@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  border: 10px solid red;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3rdcsc2JdTjJNkX9pvDIxVuaV5Djjzt6r2Q&usqp=CAU");
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-color: aquamarine;
+  background-position: center center;
+  background-position: left center;
+  background-position: left bottom;
+  background-position: right top;
+  background-position: right bottom;
+  /* if we give one value second value default set center */
+  background-position: bottom;
+  background-position: top;
+  background-position: center center;
+  /* background attchment will say that move are fix the content along y-axis are to be fixed */
+  background-attachment: scroll;
+  background-attachment: fixed;
+  /* background size to set the height: and width of the image that will like cover and contain that show by cover it will take all sides and crop but contain it will adjust  */
+  background-size: contain;
+  background-size: cover;
+  background-size: 1000px 500px;
+  /* if we give single value that will set to auto */
+  background-size: 1000px auto;
+
+  /* short and propetry that will take
+    background-color: red;
+    background-attachment: fixed;
+    background-repeat: red;
+    background-position: red;
+    background-image: red; */
+  /* except size it will take all values of background */
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3rdcsc2JdTjJNkX9pvDIxVuaV5Djjzt6r2Q&usqp=CAU")
+    fixed center red no-repeat;
+  background-size: contain;
+}
