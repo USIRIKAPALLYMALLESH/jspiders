@@ -1,0 +1,84 @@
+* {
+  /* padding: 0;
+    margin: 0;
+    box-sizing: border-box; */
+  background-color: black;
+}
+/* text and font properites */
+h1 {
+  color: wheat;
+  background-color: black;
+  text-align: left;
+  text-align: right;
+  text-align: center;
+  /* text box-shadow is used to add the shadow to text */
+  text-shadow: 2px 2px 10px cornsilk;
+  text-decoration-line: underline;
+  font-size: 45px;
+}
+.hi {
+  color: antiquewhite;
+  text-align: justify;
+  margin-top: 10px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  /* to align last line we use text -align last */
+  text-align-last: center;
+  font-size: 30px;
+  /* text indent is used to add the space at the start */
+  /* line height is used to add the space between the lines */
+  text-indent: 100px;
+}
+.bye {
+  color: lightsalmon;
+  text-decoration-style: dotted;
+  text-decoration-style: double;
+  text-decoration-style: wavy;
+  text-decoration-line: overline;
+  text-decoration-line: line-through;
+  text-decoration-line: underline;
+  text-decoration-color: blanchedalmond;
+  text-decoration-thickness: 2.5px;
+  /* short hand properity of text decertations is */
+  text-decoration: underline whitesmoke dashed;
+  line-height: 35px;
+  font-size: 23px;
+}
+/* we mainly use text decoration at a tag. */
+a {
+  color: royalblue;
+  text-align: center;
+  background-color: wheat;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+.fontstyle {
+  font-style: normal;
+  font-style: oblique;
+  font-style: italic;
+  font-size: 80px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.fontstyle:hover {
+  font-style: normal;
+  font-style: oblique;
+  font-style: italic;
+  font-size: 80px;
+  font-weight: 900;
+}
+button {
+  background-color: wheat;
+  padding: 10px 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+}
+button:hover {
+  font-style: italic;
+  font-size: 80px;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
