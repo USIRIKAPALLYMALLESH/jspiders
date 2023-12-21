@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, red, yellow, blue);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cone {
+  height: 400px;
+  width: 400px;
+  background-color: wheat;
+  border-radius: 50%;
+  background: conic-gradient(yellow, white, orange);
+  background: conic-gradient(white 20% 40%, orange 40% 80%, red);
+  box-shadow: 10px 10px 30px black;
+  /* background: conic-gradient(#17d03f 0% 25%,white 25% 50% ,red 50% 75% ,magenta 75% 100%); */
+  background: repeating-conic-gradient(#17d03f 0% 25%, white 25% 50%);
+  transition-duration: 21s;
+  transition-delay: 22s;
+  transition-timing-function: ease-in-out;
+}
+.cone:hover {
+  background: repeating-conic-gradient(#ffffff 0% 25%, #07ffb4 25% 50%);
+}
