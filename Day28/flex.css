@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(red,white,black);
+  display: flex;
+  /* background-color: yellowgreen;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    justify-content: start;
+    justify-content: flex-start;
+    justify-content: end;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: start;
+    align-items: flex-start;
+    align-items: end ;
+    align-items: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse; */
+}
+.box {
+  /* height: 200px;
+    width: 200px; */
+  background-color: brown;
+  text-align: center;
+  color: wheat;
+  font-size: 50px;
+  height: 200px;
+}
+.one,
+.four {
+  background: linear-gradient(red, yellow);
+  flex-basis: 25%;
+}
+.two {
+  background: linear-gradient(red, black);
+  flex-basis: 55%;
+}
+.three {
+  background: linear-gradient(red, yellow, blue);
+  flex-basis: 10%;
+}
