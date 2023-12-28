@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+.icon-logo {
+  /* border: 2px solid beige; */
+  flex-grow: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  position: relative;
+}
+.icon-logo > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60px;
+  /* border: 2px solid white; */
+  transition: all 0.5s ease;
+}
+.icon-logo > div:hover {
+  background-color: #f4cdcd;
+  border-radius: 50%;
+  color: black;
+}
+#youtube-logo {
+  font-size: 40px;
+  position: relative;
+}
+#bars {
+  position: relative;
+}
+/* #youtube-logo:hover{
+  background-color: white;
+  height: 40px;
+  width: 70px;
+  position: absolute;
+} */
+#bars {
+  font-size: 30px;
+}
+#bars:hover ::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: wheat;
+  color: blueviolet;
+}
+.search {
+  /* border: 2px solid beige; */
+  flex-grow: 5;
+  /* background-color: rgb(143, 143, 143); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  /* border: 1px solid black; */
+  flex-grow: 0.5;
+  /* height: 40px; */
+  border-radius: 20px;
+  padding: 0;
+  /* overflow: hidden; */
+  column-gap: 40px;
+  box-sizing: border-box;
+  /* border-radius: 10px 0 0 10px; */
+  background-color: rgb(208, 215, 223);
+  position: relative;
+  flex-wrap: nowrap;
+}
+/* form>i:hover{
+  background-color: azure;
+  height: 100%;
+  color: white;
+} */
+/* form>i:hover:before{
+ content: "";
+ height: 20px;
+ width: 20px;
+ background-color: wheat;
+ border-radius: 50%;
+ position: absolute;
+ top:15px;
+
+} */
+form > input {
+  width: 93%;
+  border: none;
+  height: inherit;
+  border-radius: 0;
+  padding: 11.1px 30px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 15px 0 0 15px;
+  font-weight: 300;
+  /* background-color: chartreuse; */
+  background-color: transparent;
+}
+#search-icon {
+  padding: 0 5px;
+  color: black;
+}
+input::placeholder {
+  border: none;
+  /* background-color: ; */
+  color: orangered;
+}
+input:focus {
+  color: black;
+}
+.nav-icons {
+  /* border: 2px solid beige; */
+  flex-grow: 1;
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 25px;
+  color: white;
+}
