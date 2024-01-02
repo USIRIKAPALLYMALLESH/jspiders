@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(pink, hwb(240 31% 0%), #ee6c6c, black);
+}
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  transition-property: all;
+  /* we can use background etc */
+  transition-duration: 5s;
+  transition-timing-function: linear;
+  transition-timing-function: ease;
+  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+  transform: rotate(-45deg);
+  scale: 0.5;
+}
+.box::after,
+.box::before {
+  content: "";
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+}
+.box::after {
+  top: 0;
+  left: 108px;
+}
+.box::before {
+  top: -110px;
+}
+.box:hover {
+  /* box-shadow: 10px 10px 30px rgb(153, 194, 235); */
+  scale: 1.8;
+}
+
+/* image section  */
+.move {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transform: rotateY(-20deg);
+}
+img {
+  height: 600px;
+  width: 70px;
+  border: 2px solid;
+  filter: blur(4px);
+  transition: all 2s ease-in;
+}
+img:hover {
+  width: 420px;
+  filter: blur(0);
+  box-shadow: 10px 10px 10px red;
+}
