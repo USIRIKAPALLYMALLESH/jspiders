@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.animation {
+  height: 400px;
+  width: 400px;
+  background-color: lightpink;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 10px red;
+}
+h1 {
+  animation-name: myOwn;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: 4;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-direction: reverse;
+  animation-direction: alternate-reverse;
+}
+@keyframes myOwn {
+  from {
+    scale: 2;
+    color: red;
+    transform: rotateY(0deg);
+  }
+  to {
+    scale: 4;
+    color: black;
+    transform: rotateY(360deg);
+  }
+}
+/* loader animation  */
+.loader {
+  height: 200px;
+  width: 200px;
+  border: 20px solid #fff0f0;
+  border-radius: 50%;
+  border-top-color: red;
+  animation-name: loader;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  position: relative;
+}
+h2 {
+  position: relative;
+  position: center;
+  background-position: top left;
+}
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loadingEffect {
+  width: 100%;
+  height: 30px;
+  background-color: #f0f0f0;
+}
+aside {
+  height: inherit;
+  animation: loadingEffect 3s linear 1s infinite forwards;
+}
+@keyframes loadingEffect {
+  from {
+    width: 0%;
+    background: linear-gradient(to left, red, black);
+  }
+  to {
+    width: 100%;
+    background: linear-gradient(to left, yellow, black);
+  }
+}
